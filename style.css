@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Lato:ital@1&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Alegreya' 'Lato';
+    background-image: url(img/travel2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.mySidenav ul a {
+    position: absolute; 
+    left: -80px; 
+    transition: 0.3s; 
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    border-radius: 0 5px 5px 0;
+    font-family: 'Quicksand';
+  }
+  
+  .mySidenav a:hover {
+    left: 0;
+  }
+  
+  #home {
+    top: 214px;
+    background-color: white;
+    border: 3px solid skyblue;
+    font-family: 'Alegreya';
+    font-weight: 500;
+  }
+  
+  #about {
+    top: 290px;
+    background-color: white; 
+    border: 3px solid skyblue;
+    font-family: 'Alegreya';
+    font-weight: 500;
+  }
+  
+  #contact {
+    top: 366px;
+    background-color: white;
+    border: 3px solid skyblue;
+    font-family: 'Alegreya';
+    font-weight: 500;
+  }
+  
+  #places {
+    top: 442px;
+    background-color: white;
+    border: 3px solid skyblue;
+    font-family: 'Alegreya';
+    font-weight: 500;
+  }
+  /* HOME-SECTION STARTS HERE */
+  .home .sign-up{
+    position: absolute;
+    width: 236px;
+    height: 42px;
+    left: 1300px;
+    top: 35px;
+    background: #FFFFFF;
+    border: 3px solid skyblue;
+    border-radius: 30px;
+  }
+  .home .sign-up h3{
+    position: absolute;
+    width: 149px;
+    height: 24px;
+    left: 45px;
+    top: 6px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: skyblue;
+  }
+  .home .content{
+    position: relative;
+  }
+  .home .content h2{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-size: 20em;
+    left: 700px;  
+    top: 250px;
+  }
+  .home .content h2:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+  }
+  .home .content h2:nth-child(2){
+    color: white;
+    animation: animate 5s ease-in-out infinite;
+  }
+  @keyframes animate
+  {
+    0%,100%
+    {
+      clip-path: polygon(0 70%, 20% 63%, 45% 61%, 63% 70%, 82% 65%, 95% 55%, 100% 51%, 100% 100%, 0% 100%);
+    }
+    50%
+    {
+      clip-path: polygon(0 46%, 15% 57%, 37% 56%, 54% 61%, 68% 67%, 87% 69%, 100% 61%, 100% 100%, 0% 100%);
+    }
+  }
+  
+  .searchBox{
+    position: absolute;
+    bottom: 150px;
+    left: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fff;
+    padding: 30px 50px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+  }
+  .searchBox .inputBx{
+    margin: 0 20px;
+  }
+  .searchBox .inputBx p{
+    color: #222;
+    margin-bottom: 10px;
+  }
+  .searchBox .inputBx p.white{
+    color: #fff;
+  }
+  .searchBox .inputBx input{
+    border: 1px solid #222;
+    outline: none;
+    padding: 10px;
+    min-width: 150px;
+    width: 100%;
+    font-size: 1.1em;
+  }
+  .searchBox .inputBx input[type="Submit"]{
+    outline: none;
+    border: none;
+    background: skyblue;
+    color: #FFF;
+    cursor: pointer;
+    letter-spacing: 2px;
+    padding: 13px;
+  } 
+
+  /* HOME-SECTION ENDS HERE */
+  /* CONTACT SECTION STARTS HERE */
+  .contact{
+    /* position: relative; */
+    min-height: 80vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: cover;
+  }
+  .contact .content {
+    max-width: 800px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: underline;
+  }
+  .contact .content p{
+    font-weight: 300;
+    color: #fff;
+    margin-top: 30px;
+  }
+  .container{
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .container .contactInfo{
+    display: flex;
+    flex-direction: column;
+  }
+  .container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+  }
+  .container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+  }
+  .container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+  }
+  .container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: white;
+    text-decoration: underline;
+  }
+  .contactForm{
+    position: absolute;
+    left: 300px;
+    width: 40%;
+    padding: 40px;
+    margin-left: 100px;
+    background: #fff;
+  }
+  .contactForm h2{
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+  }
+  .contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .contactForm .inputBox input{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+  }
+  .contactForm .inputBox input, .contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    resize: none;
+  }
+  .contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+  }
+  .contactForm .inputBox input:focus ~ span,
+  .contactForm .inputBox input:valid ~ span,
+  .contactForm .inputBox textarea:focus ~ span,
+  .contactForm .inputBox textarea:valid ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+  }
+  .contact .inputBox input[type="submit"]{
+    width: 100px;
+    background: skyblue;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+  }
+  @media (max-width: 991px){
+    .contact{
+      padding: 50px;
+    }
+    .container{
+      flex-direction: column;
+    }
+    .container .contactInfo{
+      margin-bottom: 40px;
+    }
+    .container .contactInfo,
+    .contactForm{
+      width: 100%;
+    }
+  }
+  /* CONTACT SECTION ENDS HERE */
+  /* PLACE SECTION STARTS HERE */
+  
+  .place-section .content h2{
+    position: absolute;
+    width: 500px;
+    height: 44px;
+    left: 1050px;
+    top: 20px;
+    font-family: 'Lato';
+    font-weight: 100;
+    font-size: 30px;
+    text-decoration: underline;
+    color: #FFFFFF;
+  }
+  .place-section .container h4{
+    position: relative;
+    top: 10px;
+    left: 110px;
+  }
+  .review span{
+    position: relative;
+    left: 90px;
+  }
+  .checked {
+    color: orange;
+  }
+  .container{
+    position: relative;
+    top: 30px;
+    width: 1200px;
+    left: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card h2{
+  padding: 4px;
+  text-align: center;
+}
+.card {
+    background:#FFFFFF ;
+    width: 270px;
+    height: 330px;
+    margin: 20px;
+    border-radius: 15px;
+}
+.travel-image{
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+.travel-1{
+    background-image: url(./img/Taj-Mahal-India.jpg.webp);
+}
+.travel-2{
+  background-image: url(./img/Bora-Bora-French-Polynesia.jpg.webp);
+}
+.travel-3{
+  background-image: url(./img/Amalfi-Coast-Italy.jpg.webp);
+}
+.travel-4{
+  background-image: url(./img/Beautiful-Niagara-Falls.jpg.webp);
+}
+.travel-5{
+  background-image: url(./img/Blue-Lagoon-geothermal-spa.jpg.webp);
+}
+.travel-6{
+  background-image: url(./img/Colosseum-in-Rome-Italy.jpg.webp);
+}
+.card a{
+  background-color: skyblue;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+  margin: 20px 50px;
+  text-decoration: none;
+}
+.card a:hover{
+  background-color: #FFFFFF;
+  color: black;
+}
+.card:hover{
+  background-color: lightblue;
+  color: #FFFFFF;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 1s ease;
+}
+/* PLACE SECTION ENDS HERE */
+
+  /* ABOUT SECTION STARTS HERE */
+  .about-section h2{
+    position: absolute;
+    left: 700px;
+    top: 50px;
+    font-family: 'Alegreya';
+    font-size: 50px;
+    text-decoration: underline;
+    color: #FFF;
+  }
+  .about-section .photo1 {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    border-style: solid;
+    border-color: #FFF;
+    border-radius: 40px;
+  }
+  .about-section .photo2 {
+    position: absolute;
+    top: 300px;
+    left: 370px;
+    border-style: solid;
+    border-color: #FFF;
+    border-radius: 40px;
+  }
+  .about-section .photo3 {
+    position: absolute;
+    top: 400px;
+    left: 640px;
+    border-style: solid;
+    border-color: #FFF;
+    border-radius: 40px;
+  }
+  .about-section h3{
+    position: absolute;
+    top: 150px;
+    left: 1100px;
+    color: #FFF;
+    font-size:x-large;
+  }
+  .about-section .paragraph1{
+    position: absolute;
+    color: #FFF;
+    left: 950px;
+    top: 200px;
+    width: 600px;
+  }
+  .about-section .paragraph2{
+    position: absolute;
+    color: #FFF;
+    left: 950px;
+    top: 350px;
+    width: 600px;
+  }
+  .about-section .paragraph3{
+    position: absolute;
+    color: #FFF;
+    left: 950px;
+    top: 500px;
+    width: 600px;
+  }
+  .about-section button{
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    top: 650px;
+    left: 1380px;
+  }
+  .about-section h5{
+    position: center;
+    font-family: 'Alegreya';
+    font-size: 20px;
+  }
+   .about-section button:hover{
+    background-color: black;
+    color: #FFFFFF;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+  }
+  /* ABOUT SECTION END HERE */
